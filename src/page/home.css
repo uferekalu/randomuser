@@ -16,3 +16,9 @@
 .link {
   text-decoration: none;
 }
+
+@media (max-width: 765px) {
+  .description {
+    width: 95%;
+  }
+}
