@@ -1,0 +1,78 @@
+.random_container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 5px;
+  padding: 5px;
+}
+.random_username {
+  font-size: 13px;
+  color: rgb(2, 2, 32);
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db; /* Change color as needed */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.random_user_img {
+  width: 110px;
+  height: auto;
+  border-radius: 50%;
+}
+.btn_action_next {
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 10px;
+  background-color: #3498db;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn_action_previous {
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 10px;
+  background-color: teal;
+  transition: background-color 0.3s ease-in-out;
+  color: white;
+}
+.btn_action_next:hover,
+.btn_action_previous:hover {
+  background-color: #2980b9; /* New background color on hover */
+  transition-delay: 0.5s;
+  color: white;
+  transition: all;
+}
+.btn_action_previous_disabled {
+  background-color: gray;
+  color: rgb(221, 212, 212);
+}
+.btn_action_previous_disabled:hover {
+  background-color: gray;
+  color: rgb(221, 212, 212);
+}
